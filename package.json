@@ -1,0 +1,25 @@
+{
+  "name": "express-portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio made with Node and Express to be uploded to heroku for better functionality",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjbidwell/express-portfolio.git"
+  },
+  "author": "Joshua Bidwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjbidwell/express-portfolio/issues"
+  },
+  "homepage": "https://github.com/jjbidwell/express-portfolio#readme"
+}
