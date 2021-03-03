@@ -1,0 +1,59 @@
+body {
+    background: rgb(133,146,190);
+    background: radial-gradient(circle, rgba(133,146,190,1) 14%, rgba(122,143,250,1) 74%);
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.img-zoom {
+    transition: transform .2s;
+}
+
+.img-zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+}
+
+label, .about-me, .portfolio-link{
+    font-size: 20px;
+}
+
+#submit {
+    background-color: rgba(122,143,250,1);
+    color: whitesmoke;
+    transition: color .25s, background-color .25s;
+    border: 2px rgba(122,143,250,1) solid;
+}
+
+#submit:hover {
+    color: rgba(122,143,250,1);
+    background-color: whitesmoke;
+}
+
+.bio-link {
+    color: #001ca7;
+    transition: color .25s;
+}
+
+.bio-link:hover {
+    color: darkred;
+}
+
+.footer-link, .portfolio-link {
+    color: black;
+    transition: color .25s;
+}
+
+.footer-link:hover, .portfolio-link:hover {
+    color: #001ca7;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #001ca7;
+    text-decoration: none;
+
+}
