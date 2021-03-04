@@ -57,3 +57,10 @@ label, .about-me, .portfolio-link{
     text-decoration: none;
 
 }
+
+.warning{
+    display: none;
+    font-weight: bold;
+    color: red;
+}
+
