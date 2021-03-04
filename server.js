@@ -7,33 +7,33 @@ const nodeMailer = require("nodemailer");
 const app = express();
 const port = process.env.PORT || 3001;
 
-const transporter = nodeMailer.createTransport({
-    host: 'smtp.mail.yahoo.com',
-    port: 465,
-    service: 'yahoo',
-    secure: false,
-    auth: {
-        user: process.env.YAHOO_EMAIL,
-        pass: process.env.YAHOO_PASSWORD
-    },
-    debug: false,
-    logger: true
-})
+// const transporter = nodeMailer.createTransport({
+//     host: 'smtp.mail.yahoo.com',
+//     port: 465,
+//     service: 'yahoo',
+//     secure: false,
+//     auth: {
+//         user: process.env.YAHOO_EMAIL,
+//         pass: process.env.YAHOO_PASSWORD
+//     },
+//     debug: false,
+//     logger: true
+// })
 
-const mailOptions = {
-    from: process.env.YAHOO_EMAIL,
-    to: process.env.GMAIL_EMAIL,
-    subject: "TEST",
-    text: "Bottom test"
-}
+// const mailOptions = {
+//     from: process.env.YAHOO_EMAIL,
+//     to: process.env.GMAIL_EMAIL,
+//     subject: "TEST",
+//     text: "Bottom test"
+// }
 
-transporter.sendMail(mailOptions, (err, info) => {
-    if (err) {
-        console.log(err)
-    } else {
-        console.log(info)
-    }
-})
+// transporter.sendMail(mailOptions, (err, info) => {
+//     if (err) {
+//         console.log(err)
+//     } else {
+//         console.log(info)
+//     }
+// })
 
 const root = path.join(__dirname, "public")
 
