@@ -54,6 +54,9 @@ app.get("/contact", (req, res) => {
     res.sendFile("contact.html", { root: root });
 })
 
+app.get("/resume", (req, res) => {
+    res.sendFile("assets/resume.pdf", {root: root})
+})
 app.post("/contact", (req, res) => {
     const mailOptions = {
         from: process.env.YAHOO_EMAIL,
