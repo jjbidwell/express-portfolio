@@ -55,7 +55,7 @@ app.get("/contact", (req, res) => {
 })
 
 app.get("/resume", (req, res) => {
-    res.sendFile("assets/resume.pdf", {root: root})
+    res.sendFile("/assets/resume.pdf", {root: root})
 })
 app.post("/contact", (req, res) => {
     const mailOptions = {
