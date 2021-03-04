@@ -71,7 +71,7 @@ app.post("/contact", (req, res) => {
             console.log("Message sent!")
         }
     })
-
+    res.redirect("/")
 })
 
 app.listen(port, () => console.log(`Listening on port ${port}.`))
