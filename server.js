@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = 3001;
+const port = process.env.PORT || 3001;
 
 const root = path.join(__dirname, "public")
 
@@ -24,4 +24,4 @@ app.get("/contact", (req, res) => {
     res.sendFile("contact.html", {root : root});
 })
 
-app.listen(PORT, () => console.log(`Listening on port ${PORT}.`))
+app.listen(port, () => console.log(`Listening on port ${port}.`))
