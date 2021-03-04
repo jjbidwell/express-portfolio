@@ -5,10 +5,8 @@ const app = express();
 const PORT = 3001;
 
 const root = path.join(__dirname, "public")
+
 app.use(express.static(root));
-
-//console.log(path.join(__dirname , "public"))
-
 
 app.get("/", (req, res) => {
     res.sendFile("about.html", {root : root});
