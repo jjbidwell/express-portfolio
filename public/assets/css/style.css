@@ -36,6 +36,7 @@ div::-webkit-scrollbar-thumb:hover {
     transform: scale(1.1);
 }
 
+
 label, .about-me, .portfolio-link{
     font-size: 20px;
 }
@@ -89,3 +90,9 @@ iframe {
     height: 550px;
 }
 
+#modal {
+    background: wheat;
+    margin: 10%;
+    width: 80%;
+    padding: 50px;
+}
