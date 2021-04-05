@@ -90,9 +90,16 @@ iframe {
     height: 550px;
 }
 
-#modal {
-    background: wheat;
-    margin: 10%;
-    width: 80%;
-    padding: 50px;
+.activate-modal {
+    font-size: 16px;
+    color: darkblue;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color .25s;
+}
+
+.activate-modal:hover {
+    color: red;
+    text-decoration: underline;
 }
